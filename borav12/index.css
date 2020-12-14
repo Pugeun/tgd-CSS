@@ -1,0 +1,17 @@
+/******************** 기본 설정 ********************/
+
+/* 페이지 배경 디자인 변경 */
+html {
+    height: auto !important;
+    background: linear-gradient(to bottom, var(--bg-gradient-start-color), var(--bg-gradient-end-color));
+}
+
+/* 페이지 글꼴 변경 및 애니메이션 추가 */
+body {
+    font-family: var(--font-family);
+    background: transparent;
+    /* background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'),
+        url('https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png'),
+        url('https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png');
+    animation: snow 20s linear infinite; */
+}
