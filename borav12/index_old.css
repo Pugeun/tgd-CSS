@@ -128,7 +128,8 @@ a {
 /* 불필요한 테두리 제거 및 그림자 추가 */
 header #header-bar>.row,
 #main .menu-wrapper,
-#main #main-content>div.frame {
+#main #main-content>div.frame,
+header #right-search-form>input[type=text] {
     border-radius: 4px;
     border: 1px dashed var(--primary-color);
     box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px var(--primary-color), 3px 0px 8px rgba(0.00, 0.00, 0.00, 0.20);
@@ -138,9 +139,8 @@ header #header-bar>.row,
  * 헤더
  */
 
-/* 우측 상단 검색바 테두리 색상 변경 */
-header #right-search-form>input[type=text] {
-    border-color: var(--primary-color);
+header #right-search-form>input[type=text]:focus {
+    border-color: white;
 }
 
 /* 회원 프로필 이미지 테두리 추가 */
@@ -221,13 +221,13 @@ header #header-bar .fa {
 
 /* 스트리머 프로필 이미지 위치 및 디자인 변경 */
 #board-info #board-info-profile-img {
-    width: 90px;
+    width: 80px;
     border-radius: 4px;
     border: 1px dashed var(--primary-color);
     background-color: var(--profile-image-bg-color);
     box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px var(--primary-color);
     position: absolute;
-    top: -15px;
+    top: -8px;
     z-index: 1;
 }
 

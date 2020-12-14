@@ -1,3 +1,18 @@
+/******************************
+기본 변수 선언
+******************************/
+
+/* 변수 */
+$logo-width: 135px;
+$logo-height: 50px;
+$logo-url: url('https://pugeun.github.io/tgd-CSS/borav12/logo.png');
+$font-family: 'NEXONFootballGothicLA1';
+$bg-gradient-start-color: #E5DEFF;
+$bg-gradient-end-color: #F7FCFF;
+$primary-color: #9D82FF;
+$profile-image-bg-color: #DCE4FF;
+$link-hovering-color: #EDE2FF;
+
 /* NEXONFootballGothicLA1 글꼴 */
 @font-face {
     font-family: 'NEXONFootballGothicLA1';
@@ -30,17 +45,4 @@
     100% {
         transform: rotateX(0deg);
     }
-}
-
-/* 변수 */
-:root {
-    --logo-width: 135px;
-    --logo-height: 50px;
-    --logo-url: url('https://pugeun.github.io/tgd-CSS/borav12/logo.png');
-    --font-family: 'NEXONFootballGothicLA1';
-    --bg-gradient-start-color: #E5DEFF;
-    --bg-gradient-end-color: #F7FCFF;
-    --primary-color: #9D82FF;
-    --profile-image-bg-color: #DCE4FF;
-    --link-hovering-color: #EDE2FF;
 }

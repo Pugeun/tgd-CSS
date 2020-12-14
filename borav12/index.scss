@@ -1,0 +1,94 @@
+@import "config.scss";
+
+/******************************
+마우스 커서 변경
+******************************/
+
+/* 기본 */
+html,
+body,
+.fr-popup.emoticons,
+.fr-top,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt,
+/* 텍스트 */
+span#viewers,
+#article-list #boardSearchForm .form-control,
+.fr-view,
+.fr-box.fr-basic.fr-element,
+input[type='text'] {
+    cursor: url('https://upload.tgd.kr/20201126/7d513679e9c3e3e4444c0f93d0123f60.png') 0 0, auto !important;
+}
+
+/* 링크 */
+#right-search-form>#right-search-btn,
+#board-info #board-info-bottom #addFavoriteBtn,
+#article-list #article-option-area>#article-option-area-toggle-btn,
+#article-list>.article-list-row>.item>.list-title>.list-writer>span,
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu,
+.btn,
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn,
+.fr-view img,
+.pull-left,
+a {
+    cursor: url('https://upload.tgd.kr/20201126/86715a02ab0564646e34f84cfc267e21.png') 0 0, auto !important;
+}
+
+/******************************
+트게더 로고 수정
+******************************/
+
+/* 기본 로고 제거 */
+header .row>div:nth-child(1)>a>img {
+    display: none;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+/* 커스텀 로고 삽입 */
+header .row>div:nth-child(1)>a {
+    background-repeat: no-repeat;
+    display: block;
+    width: $logo-width;
+    height: $logo-height;
+    background-image: $logo-url;
+}
+
+/******************************
+큰 틀 수정
+******************************/
+
+/* 배경 수정 */
+html {
+    height: auto !important;
+    background: linear-gradient(to bottom, $bg-gradient-start-color, $bg-gradient-end-color);
+}
+
+/* 글꼴 수정 및 배경 애니메이션 추가 */
+body {
+    font-family: $font-family;
+    background: transparent;
+    background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'),
+        url('https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png'),
+        url('https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png');
+    animation: snow 20s linear infinite;
+}
+
+/* 앵커 태그 색상 수정 */
+a {
+    color: $primary-color;
+}
+
+/* 테두리 수정 및 그림자 추가 */
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame,
+header #right-search-form>input[type=text] {
+    border-radius: 4px;
+    border: 1px dashed $primary-color;
+    box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px $primary-color, 3px 0px 8px rgba(0.00, 0.00, 0.00, 0.20);
+}
