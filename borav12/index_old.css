@@ -210,11 +210,6 @@ header #header-bar .fa {
     color: var(--primary-color);
 }
 
-/* 최하단 디자인 변경 */
-#main .menu-wrapper>a:nth-last-child(1) {
-    /* border-radius: 0 0 16px 0; */
-}
-
 /* 
  * 본문(?)
  */
