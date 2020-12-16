@@ -60,6 +60,7 @@ header .row>div:nth-child(1)>a {
 html {
     height: auto !important;
     background: linear-gradient(to bottom, $bg-gradient-start-color, $bg-gradient-end-color);
+    scroll-behavior: smooth;
 }
 
 // 글꼴 변경 및 배경 애니메이션 추가
@@ -140,6 +141,11 @@ header #header-bar {
 navigation (sidebar)
 ******************************/
 
+#main-menu {
+    position: sticky;
+    top: 8px
+}
+
 #main .menu-wrapper {
     // 헤더 색상 및 디자인 변경
     >.header {
@@ -204,7 +210,7 @@ board
         color: $primary-color;
 
         // " 명이 여신님을 영접중!" 문자 삽입
-        :after {
+        &:after {
             content: " 명이 여신님을 영접중!";
             cursor: text;
             color: $primary-color;
@@ -237,7 +243,7 @@ board
             background-color: white;
 
             // hovering 시 색상 변경
-            :hover {
+            &:hover {
                 background-color: $link-hovering-color;
                 transition: 0.3s;
             }
@@ -277,7 +283,7 @@ board
         }
 
         // hovering 시 디자인 변경
-        :hover {
+        &:hover {
             background-color: $link-hovering-color;
             transform: scale(1.01);
             transition: 0.3s;
@@ -297,15 +303,16 @@ board
     >li {
         >a,
         >span {
+            margin-right: 5px;
             color: $primary-color;
             border: 1px dashed $primary-color;
             border-radius: 4px;
 
-            :focus {
+            &:focus {
                 color: $primary-color;
             }
 
-            :hover {
+            &:hover {
                 color: $primary-color;
                 background-color: $link-hovering-color;
             }
@@ -319,8 +326,8 @@ board
             background-color: $primary-color;
             border-color: $primary-color;
 
-            :focus,
-            :hover {
+            &:focus,
+            &:hover {
                 background-color: $primary-color;
                 border-color: $primary-color;
             }
@@ -336,4 +343,21 @@ board
 #article-content-wrapper>.header,
 .fr-toolbar.fr-top {
     border-top-color: $primary-color;
+}
+
+// 위로가기 버튼 변경
+#movetotop {
+    >img {
+        display: none;
+    }
+
+    background-image: url("https://image5jvqbd.fmkorea.com/files/attach/new/20170816/486616/77589564/744857187/4f5bc2178028791a9cc17afab3acc49f.jpg");
+    background-size: contain;
+    width: 48px !important;
+    height: 48px !important;
+    opacity: .8
+}
+
+.input-group-btn {
+    margin: 100px;
 }

@@ -8,7 +8,7 @@
 $logo-width: 160px;
 $logo-height: 50px;
 $logo-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/new_logo.png');
-$font-family: 'NEXONFootballGothicLA1';
+$font-family: '777Littlebear';
 $bg-gradient-start-color: #E5DEFF;
 $bg-gradient-end-color: #F7FCFF;
 $primary-color: #9D82FF;
@@ -16,11 +16,12 @@ $shadow-color: #FBF7FF;
 $profile-image-bg-color: #DCE4FF;
 $link-hovering-color: #EDE2FF;
 $best-btn-color: #96A5FF;
+$baebsae-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/BaebSae.png');
 
-// NEXONFootballGothicLA1 글꼴
+// 777Littlebear 폰트
 @font-face {
-    font-family: 'NEXONFootballGothicLA1';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXONFootballGothicLA1.woff') format('woff');
+    font-family: '777Littlebear';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Littlebear.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
