@@ -4,12 +4,6 @@
 기본 변수 선언
 ******************************/
 @font-face {
-  font-family: "NEXONFootballGothicLA1";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXONFootballGothicLA1.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "777Littlebear";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Littlebear.woff") format("woff");
   font-weight: normal;
@@ -282,7 +276,7 @@ board
 }
 
 #movetotop {
-  background-image: url("https://image5jvqbd.fmkorea.com/files/attach/new/20170816/486616/77589564/744857187/4f5bc2178028791a9cc17afab3acc49f.jpg");
+  background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/BaebSae.png");
   background-size: contain;
   width: 48px !important;
   height: 48px !important;
