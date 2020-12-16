@@ -1,33 +1,136 @@
 @charset "UTF-8";
-/* SCSS 로 작성됨 (주석은 SCSS 를 참조) */
+
+/*******************************************************
+SCSS 로 작성됨 (주석은 SCSS 를 참조)
+*******************************************************/
 /******************************
 기본 변수 선언
 ******************************/
 @font-face {
-  font-family: "777Littlebear";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Littlebear.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "777Littlebear";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Littlebear.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
+
 @keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  100% {
-    background-position: 500px 1000px, 400px 400px, 300px 300px;
-  }
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
 }
+
 @keyframes menuAnimation {
-  0% {
-    transform: rotateX(-90deg);
-  }
-  80% {
-    transform: rotateX(20deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    80% {
+        transform: rotateX(20deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
 }
+
+@keyframes clockwise {
+    0% {
+        top: -5px;
+        left: 0;
+    }
+
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+
+    25% {
+        top: 0;
+        left: 5px;
+    }
+
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+
+    50% {
+        top: 5px;
+        left: 0;
+    }
+
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+
+    75% {
+        top: 0;
+        left: -5px;
+    }
+
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+
+    100% {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -5px;
+        right: 0;
+    }
+
+    12% {
+        top: -2px;
+        right: 2px;
+    }
+
+    25% {
+        top: 0;
+        right: 5px;
+    }
+
+    37% {
+        top: 2px;
+        right: 2px;
+    }
+
+    50% {
+        top: 5px;
+        right: 0;
+    }
+
+    62% {
+        top: 2px;
+        right: -2px;
+    }
+
+    75% {
+        top: 0;
+        right: -5px;
+    }
+
+    87% {
+        top: -2px;
+        right: -2px;
+    }
+
+    100% {
+        top: -5px;
+        right: 0;
+    }
+}
+
 /******************************
 큰 틀
 ******************************/
@@ -44,14 +147,14 @@ span#viewers,
 .fr-view,
 .fr-box.fr-basic.fr-element,
 input[type=text] {
-  cursor: url("https://upload.tgd.kr/20201126/7d513679e9c3e3e4444c0f93d0123f60.png") 0 0, auto !important;
+    cursor: url("https://upload.tgd.kr/20201126/7d513679e9c3e3e4444c0f93d0123f60.png") 0 0, auto !important;
 }
 
-#right-search-form > #right-search-btn,
+#right-search-form>#right-search-btn,
 #board-info #board-info-bottom #addFavoriteBtn,
-#article-list #article-option-area > #article-option-area-toggle-btn,
-#article-list > .article-list-row > .item > .list-title > .list-writer > span,
-.reply > .reply-header > .reply-writer.logged,
+#article-list #article-option-area>#article-option-area-toggle-btn,
+#article-list>.article-list-row>.item>.list-title>.list-writer>span,
+.reply>.reply-header>.reply-writer.logged,
 .reply-menu,
 .btn,
 .fr-toolbar .fr-command.fr-btn,
@@ -59,236 +162,264 @@ input[type=text] {
 .fr-view img,
 .pull-left,
 a {
-  cursor: url("https://upload.tgd.kr/20201126/86715a02ab0564646e34f84cfc267e21.png") 0 0, auto !important;
+    cursor: url("https://upload.tgd.kr/20201126/86715a02ab0564646e34f84cfc267e21.png") 0 0, auto !important;
 }
 
-header .row > div:nth-child(1) > a {
-  background-repeat: no-repeat;
-  display: block;
-  width: 160px;
-  height: 50px;
-  background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/new_logo.png");
+header .row>div:nth-child(1)>a {
+    background-repeat: no-repeat;
+    display: block;
+    width: 160px;
+    height: 50px;
+    background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/new_logo.png");
 }
-header .row > div:nth-child(1) > a > img {
-  display: none;
-  filter: grayscale(100%);
-  opacity: 0.8;
+
+header .row>div:nth-child(1)>a>img {
+    display: none;
+    filter: grayscale(100%);
+    opacity: 0.8;
 }
 
 html {
-  height: auto !important;
-  background: linear-gradient(to bottom, #E5DEFF, #F7FCFF);
-  scroll-behavior: smooth;
+    height: auto !important;
+    background: linear-gradient(to bottom, #E5DEFF, #F7FCFF);
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "777Littlebear";
-  background: transparent;
-  background-image: url("https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
-  animation: snow 20s linear infinite;
+    font-family: "777Littlebear";
+    background: transparent;
+    background-image: url("https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
+    animation: snow 20s linear infinite;
 }
 
 a {
-  color: #9D82FF;
+    color: #9D82FF;
 }
 
-header #header-bar > .row,
+header #header-bar>.row,
 #main .menu-wrapper,
-#main #main-content > div.frame,
-header #right-search-form > input[type=text] {
-  border-radius: 4px;
-  border: 1px dashed #9D82FF;
-  box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px #9D82FF, 3px 0px 8px rgba(0, 0, 0, 0.2);
+#main #main-content>div.frame,
+header #right-search-form>input[type=text] {
+    border-radius: 4px;
+    border: 1px dashed #9D82FF;
+    box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px #9D82FF, 3px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .fa.fa-search {
-  color: #9D82FF;
+    color: #9D82FF;
 }
 
 /******************************
 header
 ******************************/
 header #header-bar #header-menu-right #userDropdown img.profile-img {
-  border: solid 1px #9D82FF;
-}
-header #header-bar .fa {
-  color: #9D82FF;
-}
-header #header-bar #header-top-notice strong.notice-badge {
-  background-color: #9D82FF;
+    border: solid 1px #9D82FF;
 }
 
-#favoriteDropdownMenu > li > a > span.label.label-default {
-  background-color: #9D82FF;
+header #header-bar .fa {
+    color: #9D82FF;
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background-color: #9D82FF;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+    background-color: #9D82FF;
 }
 
 .dropdown-menu {
-  border-radius: 4px;
-  border: 1px dashed #9D82FF;
-  box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px #9D82FF, 3px 0px 8px rgba(0, 0, 0, 0.2);
-  animation: menuAnimation 600ms ease-in-out forwards;
-  transform-origin: top center;
+    border-radius: 4px;
+    border: 1px dashed #9D82FF;
+    box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px #9D82FF, 3px 0px 8px rgba(0, 0, 0, 0.2);
+    animation: menuAnimation 600ms ease-in-out forwards;
+    transform-origin: top center;
 }
-.dropdown-menu > li > a:hover {
-  background-color: #EDE2FF;
-  transform: scale(1.01);
-  transition: 0.3s;
+
+.dropdown-menu>li>a:hover {
+    background-color: #EDE2FF;
+    transform: scale(1.01);
+    transition: 0.3s;
 }
 
 /******************************
 navigation (sidebar)
 ******************************/
 #main-menu {
-  position: sticky;
-  top: 8px;
+    position: sticky;
+    top: 8px;
 }
 
-#main .menu-wrapper > .header {
-  border-radius: 4px 4px 0 0;
-  background-color: #9D82FF;
+#main .menu-wrapper>.header {
+    border-radius: 4px 4px 0 0;
+    background-color: #9D82FF;
 }
-#main .menu-wrapper > div.spacer {
-  height: 1px;
-  background: repeating-linear-gradient(to right, #9D82FF 0px, #9D82FF 3px, #FFFFFF 3px, #FFFFFF 4px);
+
+#main .menu-wrapper>div.spacer {
+    height: 1px;
+    background: repeating-linear-gradient(to right, #9D82FF 0px, #9D82FF 3px, #FFFFFF 3px, #FFFFFF 4px);
 }
-#main .menu-wrapper > a {
-  padding: 6px 16px 6px 6px;
+
+#main .menu-wrapper>a {
+    padding: 6px 16px 6px 6px;
 }
-#main .menu-wrapper > a:last-child {
-  border-radius: 0 0 4px 4px;
+
+#main .menu-wrapper>a:last-child {
+    border-radius: 0 0 4px 4px;
 }
-#main .menu-wrapper > a:hover {
-  background-color: #EDE2FF;
+
+#main .menu-wrapper>a:hover {
+    background-color: #EDE2FF;
 }
-#main .menu-wrapper > a > em {
-  color: #9D82FF;
+
+#main .menu-wrapper>a>em {
+    color: #9D82FF;
 }
 
 /******************************
 board
 ******************************/
 #board-info #board-info-profile-img {
-  width: 80px;
-  border-radius: 4px;
-  border: 1px dashed #9D82FF;
-  background-color: #DCE4FF;
-  box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px #9D82FF;
-  position: absolute;
-  top: -8px;
-  z-index: 1;
+    width: 80px;
+    border-radius: 4px;
+    border: 1px dashed #9D82FF;
+    background-color: #DCE4FF;
+    box-shadow: 0 0 0 2px #FBF7FF, 0 0 0 3px #9D82FF;
+    position: absolute;
+    top: -8px;
+    z-index: 1;
 }
+
 #board-info h1 {
-  margin-left: 95px;
+    margin-left: 95px;
 }
+
 #board-info #viewers-area {
-  float: right;
-  color: #9D82FF;
+    float: right;
+    color: #9D82FF;
 }
+
 #board-info #viewers-area:after {
-  content: " 명이 여신님을 영접중!";
-  cursor: text;
-  color: #9D82FF;
-  font-weight: bold;
+    content: " 명이 여신님을 영접중!";
+    cursor: text;
+    color: #9D82FF;
+    font-weight: bold;
 }
+
 #board-info #board-info-bottom {
-  margin-left: 95px;
+    margin-left: 95px;
 }
+
 #board-info #board-info-bottom a {
-  color: #9D82FF;
+    color: #9D82FF;
 }
 
 #article-list #article-list-category {
-  border-top: 2px solid #9D82FF;
-  background-color: white;
-}
-#article-list #article-list-category > a {
-  background-color: white;
-}
-#article-list #article-list-category > a:hover {
-  background-color: #EDE2FF;
-  transition: 0.3s;
-}
-#article-list > .article-list-row {
-  border: 1px dashed #9D82FF;
-  border-radius: 4px;
-  margin-bottom: 2px;
-}
-#article-list > .article-list-row > .item > .list-checkbox,
-#article-list > .article-list-row > .item > .list-header,
-#article-list > .article-list-row > .item > .list-category,
-#article-list > .article-list-row > .item > .list-title,
-#article-list > .article-list-row > .item > .list-blocked,
-#article-list > .article-list-row > .item > .list-time {
-  border-bottom: none;
-}
-#article-list > .article-list-row > .item > .list-header > span {
-  background-color: #9D82FF;
-}
-#article-list > .article-list-row > .item > .list-title > small.comment-count,
-#article-list > .article-list-row > .item > .list-title > .list-writer.logged > span {
-  color: #9D82FF;
-}
-#article-list > .article-list-row:hover {
-  background-color: #EDE2FF;
-  transform: scale(1.01);
-  transition: 0.3s;
-}
-#article-list #article-list-menu > .btn.best {
-  color: #96A5FF;
-  border-color: #96A5FF;
+    border-top: 2px solid #9D82FF;
+    background-color: white;
 }
 
-.pagination > li > a,
-.pagination > li > span {
-  margin-right: 5px;
-  color: #9D82FF;
-  border: 1px dashed #9D82FF;
-  border-radius: 4px;
+#article-list #article-list-category>a {
+    background-color: white;
 }
-.pagination > li > a:focus,
-.pagination > li > span:focus {
-  color: #9D82FF;
+
+#article-list #article-list-category>a:hover {
+    background-color: #EDE2FF;
+    transition: 0.3s;
 }
-.pagination > li > a:hover,
-.pagination > li > span:hover {
-  color: #9D82FF;
-  background-color: #EDE2FF;
+
+#article-list>.article-list-row {
+    border: 1px dashed #9D82FF;
+    border-radius: 4px;
+    margin-bottom: 2px;
 }
-.pagination > .active > a,
-.pagination > .active > span {
-  background-color: #9D82FF;
-  border-color: #9D82FF;
+
+#article-list>.article-list-row>.item>.list-checkbox,
+#article-list>.article-list-row>.item>.list-header,
+#article-list>.article-list-row>.item>.list-category,
+#article-list>.article-list-row>.item>.list-title,
+#article-list>.article-list-row>.item>.list-blocked,
+#article-list>.article-list-row>.item>.list-time {
+    border-bottom: none;
 }
-.pagination > .active > a:focus, .pagination > .active > a:hover,
-.pagination > .active > span:focus,
-.pagination > .active > span:hover {
-  background-color: #9D82FF;
-  border-color: #9D82FF;
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: #9D82FF;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count,
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #9D82FF;
+}
+
+#article-list>.article-list-row:hover {
+    background-color: #EDE2FF;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+#article-list #article-list-menu>.btn.best {
+    color: #96A5FF;
+    border-color: #96A5FF;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    margin-right: 5px;
+    color: #9D82FF;
+    border: 1px dashed #9D82FF;
+    border-radius: 4px;
+}
+
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+    color: #9D82FF;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+    color: #9D82FF;
+    background-color: #EDE2FF;
+}
+
+.pagination>.active>a,
+.pagination>.active>span {
+    background-color: #9D82FF;
+    border-color: #9D82FF;
+}
+
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #9D82FF;
+    border-color: #9D82FF;
 }
 
 .btn-primary {
-  background-color: #9D82FF;
+    background-color: #9D82FF;
 }
 
-#article-content-wrapper > .header,
+#article-content-wrapper>.header,
 .fr-toolbar.fr-top {
-  border-top-color: #9D82FF;
+    border-top-color: #9D82FF;
 }
 
 #movetotop {
-  margin-left: 50px;
-  background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/baebsae.png");
-  background-size: contain;
-  width: 100px !important;
-  height: 124px !important;
-  opacity: 0.7;
+    background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/baebsae.png");
+    background-size: contain;
+    width: 100px !important;
+    height: 124px !important;
+    opacity: 0.75;
+    margin-left: 30px;
 }
-#movetotop > img {
-  display: none;
+
+#movetotop>img {
+    display: none;
 }
 
 .input-group-btn {
-  margin: 100px;
+    margin: 100px;
 }
 
 /*# sourceMappingURL=index.css.map */
