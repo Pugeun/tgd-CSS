@@ -10,7 +10,7 @@ SCSS 로 작성됨 (주석은 SCSS 를 참조)
 $logo-width: 160px;
 $logo-height: 50px;
 $logo-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/new_logo.png');
-$font-family: '777Littlebear';
+$font-family: 'Katuri';
 $bg-gradient-start-color: #E5DEFF;
 $bg-gradient-end-color: #F7FCFF;
 $primary-color: #9D82FF;
@@ -23,9 +23,16 @@ $baebsae-width: 100px;
 $baebsae-height: 124px;
 
 // 777Littlebear 폰트
+// @font-face {
+//     font-family: '777Littlebear';
+//     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Littlebear.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
 @font-face {
-    font-family: '777Littlebear';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Littlebear.woff') format('woff');
+    font-family: 'Katuri';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
