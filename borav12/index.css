@@ -50,11 +50,11 @@ SCSS 로 작성됨 (주석은 SCSS 를 참조)
         transform: scale(0.95, 1.1) translateY(-10px);
     }
 
-    60% {
+    55% {
         transform: scale(1.02, 0.90) translateY(3px);
     }
 
-    70% {
+    68% {
         transform: scale(1, 1) translateY(0);
     }
 
