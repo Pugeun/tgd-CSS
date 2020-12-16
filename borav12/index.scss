@@ -255,7 +255,7 @@ board
         // 디자인 변경
         border: 1px dashed $primary-color;
         border-radius: 4px;
-        margin-bottom: 2px;
+        margin-bottom: 4px;
 
         >.item {
             // 하단 테두리 제거
@@ -285,8 +285,7 @@ board
         // hovering 시 디자인 변경
         &:hover {
             background-color: $link-hovering-color;
-            transform: scale(1.01);
-            transition: 0.3s;
+            animation: bounce1 2s ease;
         }
     }
 
@@ -315,6 +314,7 @@ board
             &:hover {
                 color: $primary-color;
                 background-color: $link-hovering-color;
+                animation: bounce2 2s ease;
             }
         }
     }
@@ -330,6 +330,7 @@ board
             &:hover {
                 background-color: $primary-color;
                 border-color: $primary-color;
+                animation: bounce2 2s ease;
             }
         }
     }
@@ -359,6 +360,3 @@ board
     margin-left: 30px;
 }
 
-.input-group-btn {
-    margin: 100px;
-}
