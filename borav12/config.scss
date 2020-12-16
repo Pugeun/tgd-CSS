@@ -67,15 +67,23 @@ $baebsae-height: 124px;
     0% {
         transform: scale(1, 1) translateY(0);
     }
+
     20% {
-        transform: scale(1.1, 0.8) translateY(0);
+        transform: scale(1.07, 0.8) translateY(0);
     }
-    40% {
-        transform: scale(0.95, 1.1) translateY(-15px);
+
+    35% {
+        transform: scale(0.95, 1.1) translateY(-10px);
     }
+
     60% {
-        transform: scale(1, 0.95) translateY(0);
+        transform: scale(1.02, 0.90) translateY(3px);
     }
+
+    70% {
+        transform: scale(1, 1) translateY(0);
+    }
+
     100% {
         transform: scale(1, 1) translateY(0);
     }
@@ -85,21 +93,27 @@ $baebsae-height: 124px;
     0% {
         transform: scale(1, 1) translateY(0);
     }
+
     10% {
         transform: scale(1.1, 0.9) translateY(0);
     }
+
     30% {
         transform: scale(0.9, 1.1) translateY(-15px);
     }
+
     50% {
         transform: scale(1.05, 0.95) translateY(0);
     }
+
     57% {
         transform: scale(1, 1) translateY(-5px);
     }
+
     64% {
         transform: scale(1, 1) translateY(0);
     }
+
     100% {
         transform: scale(1, 1) translateY(0);
     }
