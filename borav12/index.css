@@ -51,7 +51,7 @@ SCSS 로 작성됨 (주석은 SCSS 를 참조)
     }
 
     55% {
-        transform: scale(1.02, 0.90) translateY(3px);
+        transform: scale(1.02, 0.9) translateY(3px);
     }
 
     68% {
@@ -371,8 +371,8 @@ board
 #movetotop {
     background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/baebsae.png");
     background-size: contain;
-    width: 100px !important;
-    height: 124px !important;
+    width: 80px !important;
+    height: 99px !important;
     opacity: 0.75;
     margin-left: 30px;
 }
