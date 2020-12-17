@@ -30,6 +30,7 @@ $baebsae-height: 99px;
 //     font-style: normal;
 // }
 
+// Katuri 폰트
 @font-face {
     font-family: 'Katuri';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
@@ -68,19 +69,15 @@ $baebsae-height: 99px;
         transform: scale(1, 1) translateY(0);
     }
 
-    20% {
-        transform: scale(1.07, 0.8) translateY(0);
+    10% {
+        transform: scale(1.05, 0.8) translateY(0);
     }
 
-    35% {
-        transform: scale(0.95, 1.1) translateY(-10px);
+    30% {
+        transform: scale(0.9, 1.1) translateY(-5px);
     }
 
-    55% {
-        transform: scale(1.02, 0.90) translateY(3px);
-    }
-
-    68% {
+    45% {
         transform: scale(1, 1) translateY(0);
     }
 
@@ -88,6 +85,32 @@ $baebsae-height: 99px;
         transform: scale(1, 1) translateY(0);
     }
 }
+
+// @keyframes bounce1 {
+//     0% {
+//         transform: scale(1, 1) translateY(0);
+//     }
+
+//     20% {
+//         transform: scale(1.07, 0.8) translateY(0);
+//     }
+
+//     35% {
+//         transform: scale(0.95, 1.1) translateY(-10px);
+//     }
+
+//     55% {
+//         transform: scale(1.02, 0.90) translateY(3px);
+//     }
+
+//     68% {
+//         transform: scale(1, 1) translateY(0);
+//     }
+
+//     100% {
+//         transform: scale(1, 1) translateY(0);
+//     }
+// }
 
 // @keyframes bounce1 {
 //     0% {
