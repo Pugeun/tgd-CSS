@@ -131,9 +131,8 @@ header #header-bar {
 
     // 링크 hovering 시 색상 변경 및 애니메이션 추가
     >li>a:hover {
-        background-color: $link-hovering-color;
-        transform: scale(1.01);
-        transition: 0.3s;
+        background-color: transparent;
+        animation: bounce1 2s ease;
     }
 }
 
@@ -156,7 +155,8 @@ navigation (sidebar)
     // 스페이서 디자인 변경
     >div.spacer {
         height: 1px;
-        background: repeating-linear-gradient(to right, $primary-color 0px, $primary-color 3px, #FFFFFF 3px, #FFFFFF 4px);
+        border-bottom: 1px dashed #9D82FF;
+        // background: repeating-linear-gradient(to right, $primary-color 0px, $primary-color 3px, #FFFFFF 3px, #FFFFFF 4px);
     }
 
     // 앵커 태그 위치 변경
@@ -167,11 +167,6 @@ navigation (sidebar)
     // 최하단 디자인 변경
     >a:last-child {
         border-radius: 0 0 4px 4px;
-    }
-
-    // 앵커 태그 hovering 시 색상 변경
-    >a:hover {
-        background-color: $link-hovering-color;
     }
 
     // 앵커 태그 불릿 색상 변경
@@ -201,6 +196,7 @@ board
     // 정보창 위치 변경
     h1 {
         margin-left: 95px;
+        border-bottom: 1px dashed #9D82FF;
     }
 
     // 페이지를 보고 있는 유저수
@@ -244,8 +240,8 @@ board
 
             // hovering 시 색상 변경
             &:hover {
-                background-color: $link-hovering-color;
-                transition: 0.3s;
+                background-color: transparent;
+                animation: bounce3 2s ease;
             }
         }
     }
@@ -284,7 +280,7 @@ board
 
         // hovering 시 디자인 변경
         &:hover {
-            background-color: $link-hovering-color;
+            background-color: transparent;
             animation: bounce1 2s ease;
         }
     }
