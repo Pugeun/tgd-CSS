@@ -379,8 +379,4 @@ board
     display: none;
 }
 
-a::after {
-    background-image: url('resource/footer.png');
-}
-
 /*# sourceMappingURL=index.css.map */
