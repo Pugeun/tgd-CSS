@@ -3,6 +3,7 @@
 /*******************************************************
 SCSS 로 작성됨 (주석은 SCSS 를 참조)
 *******************************************************/
+
 /******************************
 기본 변수 선언
 ******************************/
@@ -284,7 +285,7 @@ board
 }
 
 #article-list #article-list-category>a:hover {
-    background-color: white;
+    background-color: transparent;
     animation: bounce3 2s ease;
 }
 
