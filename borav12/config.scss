@@ -7,10 +7,14 @@ SCSS 로 작성됨 (주석은 SCSS 를 참조)
 ******************************/
 
 // 변수
-$logo-width: 160px;
+$logo-width: 139px;
 $logo-height: 50px;
-$logo-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/new_logo.png');
-$font-family: 'Katuri';
+$logo-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/logo.png');
+$title-width: 285px;
+$title-height: 158px;
+$title-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/title.png');
+$font-family: 'Dovemayo-Medium';
+$font-streamer: 'Katuri';
 $bg-gradient-start-color: #E5DEFF;
 $bg-gradient-end-color: #F7FCFF;
 $primary-color: #9D82FF;
@@ -18,9 +22,9 @@ $shadow-color: #FBF7FF;
 $profile-image-bg-color: #DCE4FF;
 $link-hovering-color: #EDE2FF;
 $best-btn-color: #96A5FF;
-$baebsae-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/baebsae.png');
 $baebsae-width: 80px;
 $baebsae-height: 99px;
+$baebsae-url: url('https://pugeun.github.io/tgd-CSS/borav12/resource/baebsae.png');
 
 // 777Littlebear 폰트
 // @font-face {
@@ -30,7 +34,13 @@ $baebsae-height: 99px;
 //     font-style: normal;
 // }
 
-// Katuri 폰트
+@font-face {
+    font-family: 'Dovemayo-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'Katuri';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
