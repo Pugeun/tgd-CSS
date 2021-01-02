@@ -190,17 +190,18 @@ board
         margin-left: 95px;
         border-bottom: 1px dashed #9D82FF;
 
+        // 글꼴 변경
         >a {
             font-family: $font-streamer;
 
+            // 타이틀 추가
             &:before {
                 content: "";
-                // display: block;
                 width: $title-width;
                 height: $title-height;
                 position: absolute;
                 top: -300px;
-                left: 210px;
+                left: 215px;
                 background: $title-url no-repeat;
                 z-index: 10000;
             }
