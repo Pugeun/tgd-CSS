@@ -108,7 +108,7 @@ header .row > div:nth-child(1) > a {
   display: block;
   width: 139px;
   height: 50px;
-  background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/logo_christmas.png");
+  background-image: url("https://pugeun.github.io/tgd-CSS/borav12/resource/logo.png");
 }
 header .row > div:nth-child(1) > a > img {
   display: none;
@@ -228,12 +228,12 @@ board
 }
 #board-info > h1 > a:before {
   content: "";
-  width: 285px;
-  height: 158px;
+  width: 284px;
+  height: 159px;
   position: absolute;
   top: -300px;
   left: 215px;
-  background: url("https://pugeun.github.io/tgd-CSS/borav12/resource/title.png") no-repeat;
+  background: url("resource/test.png") no-repeat;
   z-index: 10000;
 }
 #board-info #viewers-area {
