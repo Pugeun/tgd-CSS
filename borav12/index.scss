@@ -210,16 +210,34 @@ board
 
     // 페이지를 보고 있는 유저수
     #viewers-area {
+        .fa-users:before {
+            content: "";
+            display: block;
+            width: $viewer-width;
+            height: $viewer-height;
+            background: $viewer-url no-repeat center;
+        }
+
         // 디자인 변경
         float: right;
         color: $primary-color;
+        font-weight: bold;
 
-        // " 명이 여신님을 영접중!" 문자 삽입
-        &:after {
-            content: " 명이 여신님을 영접중!";
-            cursor: text;
-            color: $primary-color;
-            font-weight: bold;
+        #viewers {
+            &:before {
+                content: "방울꽃 ";
+                cursor: text;
+                color: $primary-color;
+                font-weight: bold;
+            }
+    
+            // " 송이가 여신님을 기다리는 중.." 문자 삽입
+            &:after {
+                content: " 송이가 여신님을 기다리는 중..";
+                cursor: text;
+                color: $primary-color;
+                font-weight: bold;
+            }
         }
     }
 
@@ -250,7 +268,7 @@ board
             // hovering 시 색상 변경
             &:hover {
                 background-color: transparent;
-                animation: bounce3 2s ease;
+                animation: bounce2 2s ease;
             }
         }
     }
