@@ -1,8 +1,8 @@
 @charset "UTF-8";
-
 /*******************************************************
-SCSS 로 작성됨 (주석은 SCSS 를 참조)
+SCSS 로 작성됨 (주석은 SCSS 를 참고)
 *******************************************************/
+
 /******************************
 기본 변수 선언
 ******************************/
@@ -125,6 +125,7 @@ html {
 body {
     font-family: "Dovemayo-Medium";
     background: transparent;
+    padding-top: 180px;
     background-image: url("https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
     animation: snow 20s linear infinite;
 }
@@ -149,11 +150,6 @@ header #right-search-form>input[type=text] {
 /******************************
 header
 ******************************/
-header {
-    padding: 0.4em 0 0.4em 0;
-    margin-top: 180px;
-}
-
 header #header-bar #header-menu-right #userDropdown img.profile-img {
     border-radius: 4px;
     border: 1px dashed #9D82FF;
@@ -242,7 +238,7 @@ board
     width: 284px;
     height: 159px;
     position: absolute;
-    top: -300px;
+    top: -290px;
     left: 215px;
     background: url("https://pugeun.github.io/tgd-CSS/borav12/resource/title.png") no-repeat;
     z-index: 10000;
@@ -251,15 +247,6 @@ board
 #board-info #viewers-area {
     float: right;
     color: #9D82FF;
-    font-weight: bold;
-}
-
-#board-info #viewers-area .fa-users:before {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: url("https://pugeun.github.io/tgd-CSS/borav12/resource/viewer.png") no-repeat center;
 }
 
 #board-info #viewers-area #viewers:before {
@@ -270,10 +257,18 @@ board
 }
 
 #board-info #viewers-area #viewers:after {
-    content: " 송이가 여신님을 기다리는 중..";
+    content: "송이가 햇빛을 바라보는 중";
     cursor: text;
     color: #9D82FF;
     font-weight: bold;
+}
+
+#board-info #viewers-area .fa-user:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("https://pugeun.github.io/tgd-CSS/borav12/resource/viewer.png") no-repeat center;
 }
 
 #board-info #board-info-bottom {

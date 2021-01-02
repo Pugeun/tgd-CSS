@@ -54,6 +54,7 @@ html {
 body {
     font-family: $font-family;
     background: transparent;
+    padding-top: 180px;
     background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'),
         url('https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png'),
         url('https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png');
@@ -85,9 +86,6 @@ header
 ******************************/
 
 header {
-    padding: 0.4em 0 0.4em 0;
-    margin-top: 180px;
-
     #header-bar {
         // 회원 프로필 이미지 테두리 추가
         #header-menu-right #userDropdown img.profile-img {
@@ -200,7 +198,7 @@ board
                 width: $title-width;
                 height: $title-height;
                 position: absolute;
-                top: -300px;
+                top: -290px;
                 left: 215px;
                 background: $title-url no-repeat;
                 z-index: 10000;
@@ -210,18 +208,9 @@ board
 
     // 페이지를 보고 있는 유저수
     #viewers-area {
-        .fa-users:before {
-            content: "";
-            display: block;
-            width: $viewer-width;
-            height: $viewer-height;
-            background: $viewer-url no-repeat center;
-        }
-
         // 디자인 변경
         float: right;
         color: $primary-color;
-        font-weight: bold;
 
         #viewers {
             &:before {
@@ -231,13 +220,21 @@ board
                 font-weight: bold;
             }
     
-            // " 송이가 여신님을 기다리는 중.." 문자 삽입
+            // "송이가 햇빛을 바라보는 중" 문자 삽입
             &:after {
-                content: " 송이가 여신님을 기다리는 중..";
+                content: "송이가 햇빛을 바라보는 중";
                 cursor: text;
                 color: $primary-color;
                 font-weight: bold;
             }
+        }
+
+        .fa-user:before {
+            content: "";
+            display: block;
+            width: $viewer-width;
+            height: $viewer-height;
+            background: $viewer-url no-repeat center;
         }
     }
 
